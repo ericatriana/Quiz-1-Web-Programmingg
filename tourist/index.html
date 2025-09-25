@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Quiz 1 - Tourist Places</title>
+
+  <style>
+    nav {
+      background: #9adb9d; 
+      padding: 12px;
+      box-shadow: 0 2px 8px rgba(0, 100, 0, 0.2);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    nav ul li a:hover, 
+    nav ul li a.active {
+      background: #6d8b6f; 
+    }
+
+    /* Tourist Section */
+    .tourist-section {
+      background: #f5fff5;
+      padding: 60px 0;
+    }
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+<!--nav section start-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand mx-auto fw-bold" href="/quiz1">Quiz 1</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/profile">Profile</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/hometown">Hometown</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/food">Local Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/tourist">Tourist Places</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--nav section end-->
+
+<!-- Tourist Places Section -->
+<section class="tourist-section">
+  <div class="container text-center">
+    <h2 class="fw-bold text-success mb-3">Tourist Places in Madiun</h2>
+    <p class="text-muted mb-5">
+      Madiun is not only rich in culinary delights, but also offers natural beauty and 
+      relaxing destinations that are perfect for holidays.
+    </p>
+
+    <!-- Grid row 1 -->
+    <div class="row g-4 ">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/gunung wilis.avif" class="card-img-top" alt="Mount Wilis">
+          <div class="card-body d-flex flex-column ">
+            <h5 class="card-title">Mount Wilis</h5>
+            <p class="card-text">A majestic mountain that offers hiking trails and breathtaking natural scenery.</p>
+            <a href="https://maps.app.goo.gl/G2fTe4t86BwAkffq5" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/kedung brubus.jpeg" class="card-img-top" alt="Kedungbrubus Reservoir">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kedungbrubus Reservoir</h5>
+            <p class="card-text">A large reservoir surrounded by greenery, perfect for fishing and relaxing.</p>
+            <a href="https://maps.app.goo.gl/EFY3Woc9yPDVSBJKA" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/bantaran.webp" class="card-img-top" alt="Bantaran Park">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Bantaran Park</h5>
+            <p class="card-text">A city park by the river, popular for jogging, cycling, and family recreation.</p>
+            <a href="https://maps.app.goo.gl/A5htuhA5wyP68EfK8" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/grape.jpg" class="card-img-top" alt="Wana Wisata Grape">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Wana Wisata Grape</h5>
+            <p class="card-text">A natural tourist destination with fresh air, clear rivers, and lush greenery.</p>
+            <a href="https://maps.app.goo.gl/CyiJBbAMy7NkGprj8" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid row 2 -->
+    <div class="row g-4 mt-4">
+      <!-- Card 5 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/seweru.jpg" class="card-img-top" alt="Seweru Waterfall">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Seweru Waterfall</h5>
+            <p class="card-text">A beautiful waterfall located in Kare, surrounded by lush nature and fresh air.</p>
+            <a href="https://tempatwisata.pro/wisata/Air-Terjun-Seweru" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/nongko ijo.webp" class="card-img-top" alt="Nongko Ijo Tea Plantation">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Nongko Ijo</h5>
+            <p class="card-text">A pine plantation offering cool weather, scenic views, and relaxing vibes.</p>
+            <a href="https://maps.app.goo.gl/4sbMuFu2zJP65JFH7" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets//kresek.jpeg" class="card-img-top" alt="Kresek Monument">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Kresek Monument</h5>
+            <p class="card-text">A historical site built to commemorate the victims of the 1948 Madiun Affair.</p>
+            <a href="google.com/maps?sca_esv=3d074f00401c233b&rlz=1C1ONGR_enID1111ID1111&biw=959&bih=912&output=search&q=monumen+kresek&source=lnms&fbs=AIIjpHwLVCc2uacayx5KpOptlrBcJEAmmcFhnEwQG-at6alKi1rI8_-aumgZeb2JeRdep8im-nckfjjKrZcvtZBMZR4qH4npzDFnG1cfvNnNeo595Dldk5IWmGuJZqMlxjqqD5qHSCPMPvKu122dLaGEuI3ZDhrRKJdmvSbIKB3XI2339PZJBOAxnF7jZzFqE5rjEuzoTOAQUXsdRM1tZGKcJPdgBPWKQw&entry=mc&ved=1t:200715&ictx=111" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="col-md-3">
+        <div class="card h-100 shadow-sm">
+          <img src="/assets/waduk bening.jpg" class="card-img-top" alt="Waduk Bening Widas">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Waduk Bening Widas</h5>
+            <p class="card-text">A large reservoir with calm water views, fishing spots, and a peaceful atmosphere.</p>
+            <a href="https://maps.app.goo.gl/YCoeBEpUypGvG6oZ6" class="btn btn-success align-self-center mt-auto">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Tourist Section -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
